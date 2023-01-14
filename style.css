@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 }
 body {
-	background-color: #a78bfa;
+	background-color: #1e293b;
 	font-family: "Nunito", sans-serif;
 }
 .mainContainer {
@@ -20,8 +20,10 @@ body {
 	letter-spacing: 4px;
 	font-size: 2.5rem;
 	color: #fbcfe8;
+	position: relative;
 }
 .sketchTab {
+	/* filter: blur(2px); */
 	border: 2px solid #bae6fd;
 	border-radius: 2rem;
 	width: 40vw;
@@ -29,7 +31,7 @@ body {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: #6ee7b7;
+	background-color: #1e40af;
 	box-shadow: 0 0 5px #475569;
 	/* z-index: -1; */
 }
@@ -53,7 +55,7 @@ body {
 	width: 3rem;
 	height: 3rem;
 	border-radius: 50%;
-	background-color: cadetblue;
+	background-color: #bae6fd;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -77,5 +79,32 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
 	border-radius: 50%;
 	border: none;
-	box-shadow: 0 0 1rem #475569;
+	box-shadow: 0 1px 2px #475569;
+}
+.inputContainer {
+	position: absolute;
+	display: none;
+	top: 36%;
+	height: 25vh;
+	width: 20vw;
+	background-color: #334155;
+	border-radius: 1rem;
+}
+.inputScreen {
+	display: flex;
+	flex-direction: column;
+	height: 90%;
+	justify-content: center;
+	gap: 1rem;
+	align-items: center;
+}
+.inputTitle h3 {
+	color: white;
+}
+input[type="number"] {
+	width: 50%;
+	border-radius: 1rem;
+	padding: 1rem;
+	text-align: center;
+	font-size: 1rem;
 }
