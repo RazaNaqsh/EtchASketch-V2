@@ -54,8 +54,28 @@ body {
 	height: 3rem;
 	border-radius: 50%;
 	background-color: cadetblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem;
 }
 .btn:hover {
 	transform: scale(0.95);
 	transition: ease-out 200ms;
+}
+.colorPicker {
+	border-radius: 50%;
+}
+input[type="color"] {
+	border: none;
+	width: 70%;
+	height: 70%;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border-radius: 50%;
+	border: none;
+	box-shadow: 0 0 1rem #475569;
 }
